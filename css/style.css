@@ -2,7 +2,27 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container-wrapper {}
+
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .alert-container {}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    border-color: #eec802;
+}
 
 .callout-container {
     height: 100vh;
@@ -28,26 +48,52 @@ body {
 
 .features-container {}
 
+/* Page headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
 
 .quotes-container {}
 
 
-/*Block Divider */
+/*Block Dividers */
 
 .block-divider {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--orange {
     background-color: #f05f40;
 }
 
+.block-divider--white {
+    background-color: white;
+}
+
 .block-divider--short {
     width: 35px;
 }
 
+/* Content containers */
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
 
 /* Nav bar */
 
@@ -62,14 +108,23 @@ body {
 
 .navbar {
     margin-bottom: 0;
-    border:0;
-    width:100%
-    background-color: rgba(0,0,0,0.25);
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
-.navbar .navabar-toggler {
-    
+.navbar .navbar-toggler {
+    border: 0;
 }
+
+.navbar-dark .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
 /*Jumbotron*/
 
 .jumbotron {
@@ -115,4 +170,26 @@ body {
     color: white;
     background-color: #bf4025;
     border-color: #bf4025;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+
 }

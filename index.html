@@ -17,6 +17,19 @@
 <body>
 
     <div class="container-fluid navalert-container">
+
+        <div class="container-fluid alert-container">
+            <div class="row d-none d-sm-block" id="saleAlert">
+                <div class="col-12">
+                    <div class="site-wide-alert alert alert-warning">
+                        <strong>Sale Now On!</strong> We've got a sale on.
+                        Get 12 months subscription for the price of 6!
+                        <a href=""> See here for details!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <nav class="navbar navbar-dark navbar-expand-sm">
 
             <a href="/" class="navbar-brand">
@@ -56,7 +69,7 @@
                     </li>
 
                     <li class="nav-item mr-2 d-block d-lg-none">
-                        <a href="/login" class="nav-link">
+                        <a href="/login" class="btn btn--cta btn--red">
                             Sign in / Sign up
                         </a>
                     </li>
@@ -67,7 +80,7 @@
 
                 <p class="navbar-text my-auto mr-2">
                     <i>Great whiskey delivered to your door!</i>
-                    <a href="/login" class="ml-2">
+                    <a href="/login" class="ml-2 btn btn--cta btn--red">
                         Sign In / Sign-Up!
                     </a>
                 </p>
@@ -75,41 +88,30 @@
             </div>
         </nav>
     </div>
-    <!--
-    <div class="container alert-container">
-        <div class="row d-none d-sm-block" id="saleAlert">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on.
-                    Get 12 months subscription for the price of 6!
-                    <a href=""> See here for details!</a>
-                </div>
-            </div>
-        </div>
-    </div>
--->
+
     <div class="container-fluid callout-container">
         <div class="opaque-overlay">&nbsp;</div>
         <div class="row ">
             <div class="col-12">
                 <section class="callout jumbotron mt-3 text-center">
                     <h1 class="jumbotron-header">
-                        The Finest Whiskeys Delivered To Your Doorstep
+                        The finest whiskeys delivered to your doorstep.
                     </h1>
                     <hr class="block-divider block-divider--orange">
                     <p class="lead">
                         Sign up today to start receiving the world's best whiskeys every month.
                         <s class="d-none d-sm-inline">£19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
-                        <strong><mark>The first one is free!</mark></strong>
+                        <strong><mark>First one is free!</mark></strong>
                     </p>
-
+                    <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">
+                        Sign Up
+                    </button>
                     <p class="text-muted">
                         <small>You must be over 18 to sign up to our service. Please drink responsibly.</small>
                     </p>
 
-                    <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign
-                        Up</button>
+
                 </section>
             </div>
         </div>
@@ -117,132 +119,136 @@
 
     </div>
 
-    <div class="container quotes-container">
-        <section class="quotes">
+    <div class="container-wrapper">
+        <div class="container quotes-container content-container">
+            <section class="quotes">
 
-            <div class="row">
+                <div class="row">
 
-                <div class="col-12 my-5">
+                    <div class="col-12 page-header">
 
-                    <h2 class="text-uppercase">
-                        Quotes:
-                    </h2>
-
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="media">
-
-                        <div class="d-none d-sm-block">
-                            <img src="./images/girl-image.png" class="rounded-circle mr-3" height="100" width="100">
-                        </div>
-
-                        <div class="media-body">
-                            <blockquote class="blockquote">
-
-                                <p>I've been introduced to more than 10 great whiskeys I never knew about.</p>
-
-                                <p>- Jane Doe</p>
-
-                            </blockquote>
-                        </div>
+                        <h2 class="text-uppercase">
+                            Quotes:
+                        </h2>
+                        <hr class="block-divider block-divider--short">
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="media">
-                        <div class="d-none d-sm-block">
-                            <img src="./images/guy-image.png" class="rounded-circle mr-3" height="100" width="100">
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="blockquote">
+                <div class="row">
 
-                                <p>I haven't been sober for months!</p>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="media">
 
-                                <p>- Jon Doe</p>
+                            <div class="d-none d-sm-block">
+                                <img src="./images/girl-image.png" class="rounded-circle mr-3" height="100" width="100">
+                            </div>
 
-                            </blockquote>
+                            <div class="media-body">
+                                <blockquote class="blockquote">
+
+                                    <p>I've been introduced to more than 10 great whiskeys I never knew about.</p>
+
+                                    <p>- Jane Doe</p>
+
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
 
-                </div>
-            </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="media">
+                            <div class="d-none d-sm-block">
+                                <img src="./images/guy-image.png" class="rounded-circle mr-3" height="100" width="100">
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="blockquote">
 
-        </section>
+                                    <p>I haven't been sober for months!</p>
+
+                                    <p>- Jon Doe</p>
+
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
     </div>
 
-    <div class="container features-container">
-        <section class="features">
+    <div class="container-wrapper container-wrapper--red">
+        <div class="container features-container content-container">
+            <section class="features">
 
-            <div class="row">
-                <div class="col-12 my-5">
+                <div class="row">
+                    <div class="col-12 page-header">
 
-                    <h2 class="text-uppercase">Features:</h2>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-
-                    <div class="feature">
-
-                        <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1</h3>
-
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident est libero, pariatur
-                            atque
-                            quaerat laudantium blanditiis quisquam labore porro iste.
-                        </p>
-
-                        <p>
-                            <a href="" class="btn btn-sm btn-light">Read More</a>
-                        </p>
-
+                        <h2 class="text-uppercase">Features:</h2>
+                        <hr class="block-divider block-divider--short block-divider--white">
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
 
-                        <h3><i class="fa-solid fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+                        <div class="feature">
 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam eius facilis eligendi amet
-                            ipsum
-                            animi repudiandae illum architecto praesentium dolorum.
-                        </p>
+                            <h3><i class="fa-solid fa-gift d-none d-sm-block"></i> Feature 1</h3>
 
-                        <p>
-                            <a href="" class="btn btn-sm btn-light">Read More</a>
-                        </p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident est libero, pariatur
+                                atque
+                                quaerat laudantium blanditiis quisquam labore porro iste.
+                            </p>
 
+                            <p>
+                                <a href="" class="btn btn-sm btn-light">Read More</a>
+                            </p>
+
+                        </div>
                     </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="feature">
+
+                            <h3><i class="fa-solid fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
+
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam eius facilis eligendi
+                                amet
+                                ipsum
+                                animi repudiandae illum architecto praesentium dolorum.
+                            </p>
+
+                            <p>
+                                <a href="" class="btn btn-sm btn-light">Read More</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-md-none d-lg-block col-lg-4">
+                        <div class="feature">
+
+                            <h3><i class="fa-solid fa-circle-xmark d-none d-sm-block"></i> Feature 3</h3>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quasi doloribus corrupti
+                                placeat
+                                doloremque quod sit ad architecto facere impedit!
+                            </p>
+
+                            <p>
+                                <a href="" class="btn btn-sm btn-light">Read More</a>
+                            </p>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-12 d-md-none d-lg-block col-lg-4">
-                    <div class="feature">
-
-                        <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quasi doloribus corrupti
-                            placeat
-                            doloremque quod sit ad architecto facere impedit!
-                        </p>
-
-                        <p>
-                            <a href="" class="btn btn-sm btn-light">Read More</a>
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
+            </section>
+        </div>
     </div>
-
 
     <div class="modal" tabindex="-1" id="signUpModal">
         <div class="modal-dialog">
